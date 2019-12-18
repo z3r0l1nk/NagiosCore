@@ -160,7 +160,7 @@ function nrpe()
 		echo
 		echo -e '\e[01;34m+++ Installing NRPE...\e[0m'
 		echo
-		./configure --with-ssl=/usr/bin/openssl --with-ssl-lib=/usr/lib/x86_64-linux-gnu
+		./configure --with-ssl=/usr/bin/openssl --with-ssl-lib=/usr/lib/arm-linux-gnueabihf
 		make all
 		make install
 		make install-plugin
