@@ -165,17 +165,19 @@ function nrpe()
 		make install
 		make install-plugin
 		make install-daemon
-		make install-daemon-config
-
+		make install-config
+		make install-init
+		
 	# Copy NRPE Init Script and Make It Executable
-		cp init-script.debian /etc/init.d/nrpe
-		chmod 700 /etc/init.d/nrpe
+	#	cp init-script.debian /etc/init.d/nrpe
+	#	chmod 700 /etc/init.d/nrpe
 
 	# Start the NRPE Daemon
 		/etc/init.d/nrpe start
 
 	# Make NRPE Start at Boot Time
-		update-rc.d nrpe defaults
+	#	update-rc.d nrpe defaults
+		systemctl enable nrpe.service
 		echo
 		echo -e '\e[01;37;42mNRPE has been successfully installed!\e[0m'
 }
