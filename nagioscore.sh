@@ -149,7 +149,7 @@ function nrpe()
 
 	#Untarring the NRPE File
 		echo
-		echo -e '\e[01;34m+++ Untarrring the Nagios Core files...\e[0m'
+		echo -e '\e[01;34m+++ Untarrring the NRPE files...\e[0m'
 		tar xzf nrpe-$nrpe_version.tar.gz
 		cd nrpe-$nrpe_version
 		echo
