@@ -37,7 +37,7 @@ function nagiosCore()
 		echo -e '\e[01;34m+++ Installing Prerequisite Packages...\e[0m'
 		echo
 		apt-get update
-		apt-get install -y apache2 apache2-utils libapache2-mod-php7.3 build-essential libssl-dev unzip gcc make snmp snmpd net-tools dnsutils mariadb-server gnutls-bin libgnutls.*-dev php7.3-mysql php-ssh2 php-pear php-mysql
+		apt-get install -y apache2 apache2-utils libapache2-mod-php7.3 build-essential libssl-dev unzip gcc make snmp snmpd net-tools dnsutils mariadb-server gnutls-bin libgnutls.*-dev php7.3-mysql php-ssh2 php-pear php-mysql libsnmp-dev fping nagios-plugins-contrib
 		phpenmod mysqli gettext
 		a2enmod cgi
 		echo
