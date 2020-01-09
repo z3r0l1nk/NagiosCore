@@ -19,6 +19,7 @@ function nagiosCore()
 		echo
 		echo -e '\e[01;34m+++ Adding Nagios Users and Groups...\e[0m'
 		echo
+		mkdir /usr/local/nagios
 		groupadd -g 9000 nagios
 		groupadd -g 9001 nagcmd
 		useradd -u 9000 -g nagios -G nagcmd -d /usr/local/nagios -c 'Nagios Admin' nagios
