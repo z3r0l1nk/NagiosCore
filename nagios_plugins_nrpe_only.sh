@@ -9,11 +9,11 @@
 # Romans 16:27, I Corinthians 15:1-4
 #------------------------------------------------------
 ######## VARIABLES ########
-nagios_version=4.4.5
 plugin_version=2.3.1
 nrpe_version=3.2.1
 ######## FUNCTIONS ########
-function nagiosCore()
+
+function nagiosPlugin()
 {
 	#Add Nagios Users and Groups
 		echo
@@ -32,8 +32,6 @@ function nagiosCore()
 		echo
 		echo -e '\e[01;37;42mThe Nagios users and groups have been successfully added!\e[0m'
 
-function nagiosPlugin()
-{
 	#Install Require Packages
 		echo
 		echo -e '\e[01;34m+++ Installing Prerequisite Packages...\e[0m'
