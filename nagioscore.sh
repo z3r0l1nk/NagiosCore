@@ -10,8 +10,8 @@
 #------------------------------------------------------
 ######## VARIABLES ########
 nagios_version=4.4.5
-plugin_version=2.3.1
-nrpe_version=3.2.1
+plugin_version=2.3.3
+nrpe_version=4.0.3
 ######## FUNCTIONS ########
 function nagiosCore()
 {
